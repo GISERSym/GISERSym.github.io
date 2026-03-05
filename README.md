@@ -38,3 +38,235 @@ https://aag-meetings.secure-platform.com/aag2026
 | Mar 20, 2026 | 12:50 PM – 2:10 PM | Social Sensing for Disasters, Health Crises, and Disruptive Events | Virtual | Virtual Room 1 | Hoeyun Kwon |
 | Mar 20, 2026 | 2:30 PM – 3:50 PM | Crime Analysis and Public Safety 3 | Paper | Golden Gate, 25th Floor | Hanlin Zhou |
 | Mar 20, 2026 | 4:10 PM – 5:30 PM | Disability GIS | Paper | Golden Gate, 25th Floor | Shiloh Deitz |
+
+## AAG 2026 – GISER Symposium Sessions
+
+### 01 — Multimodal Human Mobility
+🗓 **Date:** March 17, 2026  
+🕒 **Time:** 10:10 AM – 11:30 AM  
+📍 **Room:** Nikko I, 3rd Floor  
+👤 **Primary Organizer:** Luyu Liu  
+
+---
+
+### 02 — Past, Present, and Future of GIScience
+🗓 **Date:** March 17, 2026  
+🕒 **Time:** 12:50 PM – 2:10 PM  
+📍 **Room:** Nikko I, 3rd Floor  
+👤 **Primary Organizer:** Lei Zou  
+
+---
+
+### 03 — AI & Ethics in Geography Education
+🗓 **Date:** March 17, 2026  
+🕒 **Time:** 2:30 PM – 3:50 PM  
+📍 **Room:** Nikko I, 3rd Floor  
+👤 **Primary Organizer:** Yue Lin  
+
+---
+
+### 04 — Urban Environmental Challenges and Mobility Dynamics
+🗓 **Date:** March 17, 2026  
+🕒 **Time:** 4:10 PM – 5:30 PM  
+📍 **Room:** Nikko I, 3rd Floor  
+👤 **Primary Organizer:** Suyeon Hwang  
+
+---
+
+### 05 — Less Is More? The Value of Small Geospatial Data in the Era of Big Data and AI
+🗓 **Date:** March 18, 2026  
+🕒 **Time:** 8:30 AM – 9:50 AM  
+📍 **Room:** Nikko I, 3rd Floor  
+👤 **Primary Organizer:** Lei Zou  
+
+---
+
+### 06 — Humans in GIScience and GeoAI
+🗓 **Date:** March 18, 2026  
+🕒 **Time:** 10:10 AM – 11:30 AM  
+📍 **Room:** Continental 8, Ballroom Level, Hilton  
+👤 **Primary Organizer:** Shih-Lung Shaw  
+
+---
+
+### 07 — Integration of AI and GIS for Smart Urban Management
+🗓 **Date:** March 18, 2026  
+🕒 **Time:** 2:30 PM – 3:50 PM  
+📍 **Room:** Nikko I, 3rd Floor  
+👤 **Primary Organizer:** Junghwan Kim  
+
+---
+
+### 08 — GIScience Advances in Climate Effects on Environmental Health
+🗓 **Date:** March 19, 2026  
+🕒 **Time:** 8:30 AM – 9:50 AM  
+📍 **Room:** Nikko I, 3rd Floor  
+👤 **Primary Organizer:** Joynal Abedin  
+
+---
+
+### 09 — Sensing Human Experiences with Emerging Geospatial Methods I
+🗓 **Date:** March 19, 2026  
+🕒 **Time:** 8:30 AM – 9:50 AM  
+📍 **Room:** Nikko III, 3rd Floor  
+👤 **Primary Organizer:** Yuhao Kang  
+
+---
+
+### 10 — Ethics in GIScience
+🗓 **Date:** March 19, 2026  
+🕒 **Time:** 10:10 AM – 11:30 AM  
+📍 **Room:** Golden Gate, 25th Floor  
+👤 **Primary Organizer:** Hongyu Zhang  
+
+---
+
+### 11 — Sensing Human Experiences with Emerging Geospatial Methods II
+🗓 **Date:** March 19, 2026  
+🕒 **Time:** 10:10 AM – 11:30 AM  
+📍 **Room:** Nikko III, 3rd Floor  
+👤 **Primary Organizer:** Jiaxin Feng  
+
+---
+
+### 12 — Sensing Urban Human Dynamics Through Multi-Source Insights (Part I)
+🗓 **Date:** March 19, 2026  
+🕒 **Time:** 12:50 PM – 2:10 PM  
+📍 **Room:** Nikko I, 3rd Floor  
+👤 **Primary Organizer:** Hao Tian  
+
+---
+
+### 13 — Sensing Human Experiences with Emerging Geospatial Methods III
+🗓 **Date:** March 19, 2026  
+🕒 **Time:** 12:50 PM – 2:10 PM  
+📍 **Room:** Nikko III, 3rd Floor  
+👤 **Primary Organizer:** Jiaxin Feng  
+
+---
+
+### 14 — GIScience and Hazards I
+🗓 **Date:** March 19, 2026  
+🕒 **Time:** 2:30 PM – 3:50 PM  
+📍 **Room:** Golden Gate, 25th Floor  
+👤 **Primary Organizer:** Bandana Kar  
+
+---
+
+### 15 — Sensing Human Experiences with Emerging Geospatial Methods IV
+🗓 **Date:** March 19, 2026  
+🕒 **Time:** 2:30 PM – 3:50 PM  
+📍 **Room:** Nikko III, 3rd Floor  
+👤 **Primary Organizer:** Jiaxin Feng  
+
+---
+
+### 16 — Sensing Urban Human Dynamics Through Multi-Source Insights (Part II)
+🗓 **Date:** March 19, 2026  
+🕒 **Time:** 2:30 PM – 3:50 PM  
+📍 **Room:** Nikko I, 3rd Floor  
+👤 **Primary Organizer:** Heng Cai  
+
+---
+
+### 17 — Using Geospatial Technologies to Promote Human-Centered Urban Sustainability
+🗓 **Date:** March 19, 2026  
+🕒 **Time:** 4:10 PM – 5:30 PM  
+📍 **Room:** Nikko III, 3rd Floor  
+👤 **Primary Organizer:** Zhang Chen  
+
+---
+
+### 18 — Human-Centered Assessments of Disaster Risk and Resilience
+🗓 **Date:** March 19, 2026  
+🕒 **Time:** 4:10 PM – 5:30 PM  
+📍 **Room:** Peninsula, 25th Floor  
+👤 **Primary Organizer:** Md Zakaria Salim  
+
+---
+
+### 19 — GIScience and Hazards II
+🗓 **Date:** March 19, 2026  
+🕒 **Time:** 4:10 PM – 5:30 PM  
+📍 **Room:** Monterey 1 & 2, 3rd Floor  
+👤 **Primary Organizer:** Bandana Kar  
+
+---
+
+### 20 — Linking Human Physiology and Perception of Space
+🗓 **Date:** March 19, 2026  
+🕒 **Time:** 4:10 PM – 5:30 PM  
+📍 **Room:** Nikko I, 3rd Floor  
+👤 **Primary Organizer:** Armita Kar  
+
+---
+
+### 21 — Human Networks and Data Science
+🗓 **Date:** March 19, 2026  
+🕒 **Time:** 4:10 PM – 5:30 PM  
+📍 **Room:** Golden Gate 4, Lobby Level, Hilton  
+👤 **Primary Organizer:** Lei Zou  
+
+---
+
+### 22 — Human-Environment Interactions in Digital Twin and 3D Urban Space
+🗓 **Date:** March 20, 2026  
+🕒 **Time:** 8:30 AM – 9:50 AM  
+📍 **Room:** Nikko I, 3rd Floor  
+👤 **Primary Organizer:** Zongrong Li  
+
+---
+
+### 23 — Future of Human-Centered Geospatial AI
+🗓 **Date:** March 20, 2026  
+🕒 **Time:** 8:30 AM – 9:50 AM  
+📍 **Room:** Golden Gate, 25th Floor  
+👤 **Primary Organizer:** Jiaxin Feng  
+
+---
+
+### 24 — Sensing Urban Mobility Experiences for Human-Centered Learning and Decision-Making
+🗓 **Date:** March 20, 2026  
+🕒 **Time:** 10:10 AM – 11:30 AM  
+📍 **Room:** Peninsula, 25th Floor  
+👤 **Primary Organizer:** Armita Kar  
+
+---
+
+### 25 — Crime Analysis and Public Safety 1
+🗓 **Date:** March 20, 2026  
+🕒 **Time:** 10:10 AM – 11:30 AM  
+📍 **Room:** Golden Gate, 25th Floor  
+👤 **Primary Organizer:** Hanlin Zhou  
+
+---
+
+### 26 — Crime Analysis and Public Safety 2
+🗓 **Date:** March 20, 2026  
+🕒 **Time:** 12:50 PM – 2:10 PM  
+📍 **Room:** Golden Gate, 25th Floor  
+👤 **Primary Organizer:** Hanlin Zhou  
+
+---
+
+### 27 — Social Sensing for Disasters, Health Crises, and Disruptive Events
+🗓 **Date:** March 20, 2026  
+🕒 **Time:** 12:50 PM – 2:10 PM  
+📍 **Room:** Virtual Session  
+👤 **Primary Organizer:** Hoeyun Kwon  
+
+---
+
+### 28 — Crime Analysis and Public Safety 3
+🗓 **Date:** March 20, 2026  
+🕒 **Time:** 2:30 PM – 3:50 PM  
+📍 **Room:** Golden Gate, 25th Floor  
+👤 **Primary Organizer:** Hanlin Zhou  
+
+---
+
+### 29 — Disability GIS
+🗓 **Date:** March 20, 2026  
+🕒 **Time:** 4:10 PM – 5:30 PM  
+📍 **Room:** Golden Gate, 25th Floor  
+👤 **Primary Organizer:** Shiloh Deitz  
