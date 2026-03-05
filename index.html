@@ -182,7 +182,12 @@
     .topic-text { font-size: .9rem; line-height: 1.55; color: var(--text); font-weight: 500; }
 
     /* ─── SESSIONS ──────────────────────────────────────────── */
-    .sessions-list { display: flex; flex-direction: column; gap: .85rem; }
+    .sessions-list{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
     .session-card {
       background: var(--bg);
       border: 1px solid var(--border);
