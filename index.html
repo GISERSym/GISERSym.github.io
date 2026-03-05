@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GISER 2026 | AAG Symposium on GIScience for Human Experience and Responsibility</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy:       #162540;
+      --navy-mid:   #1e3257;
+      --navy-light: #243b65;
+      --accent:     #d63535;
+      --accent-light: #e87070;
+      --gold:       #f59e0b;
+      --text:       #1e293b;
+      --text-muted: #64748b;
+      --bg:         #ffffff;
+      --bg-soft:    #f8fafc;
+      --border:     #e2e8f0;
+      --card-shadow: 0 1px 3px rgba(0,0,0,.07), 0 4px 16px rgba(0,0,0,.06);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.7;
+    }
+
+    /* ─── NAV ─────────────────────────────────────────────── */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      background: rgba(22, 37, 64, 0.97);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+    .nav-inner {
+      max-width: 1100px; margin: 0 auto;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 1.5rem; height: 60px;
+    }
+    .nav-logo {
+      font-size: 1.1rem; font-weight: 800; color: #fff;
+      letter-spacing: .04em; text-decoration: none;
+    }
+    .nav-logo span { color: var(--accent-light); }
+    .nav-links {
+      display: flex; gap: 2rem; list-style: none;
+    }
+    .nav-links a {
+      color: rgba(255,255,255,.75); text-decoration: none;
+      font-size: .85rem; font-weight: 500;
+      transition: color .2s;
+    }
+    .nav-links a:hover { color: #fff; }
+
+    /* ─── HERO ─────────────────────────────────────────────── */
+    .hero {
+      background: linear-gradient(150deg, var(--navy) 0%, var(--navy-mid) 55%, var(--navy-light) 100%);
+      padding: 140px 1.5rem 90px;
+      position: relative; overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80'%3E%3Ccircle cx='40' cy='40' r='.8' fill='%23ffffff' fill-opacity='.12'/%3E%3C/svg%3E") repeat;
+      opacity: 0.4;
+    }
+    .hero-inner {
+      max-width: 860px; margin: 0 auto;
+      position: relative; z-index: 1;
+    }
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: .5rem;
+      background: rgba(214,53,53,.2);
+      border: 1px solid rgba(232,112,112,.35);
+      color: var(--accent-light);
+      border-radius: 99px;
+      padding: .35rem 1rem;
+      font-size: .8rem; font-weight: 600; letter-spacing: .06em;
+      text-transform: uppercase; margin-bottom: 1.5rem;
+    }
+    .hero-badge::before { content: '📍'; font-size: .9rem; }
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2rem, 5vw, 3.25rem);
+      font-weight: 800;
+      color: #fff;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+    }
+    .hero h1 em {
+      font-style: normal;
+      color: var(--accent-light);
+    }
+    .hero-sub {
+      font-size: 1.05rem; color: rgba(255,255,255,.7);
+      max-width: 680px; margin-bottom: 2.5rem;
+      line-height: 1.8;
+    }
+    .hero-meta {
+      display: flex; gap: 2.5rem; flex-wrap: wrap;
+    }
+    .hero-meta-item {
+      display: flex; flex-direction: column; gap: .2rem;
+    }
+    .hero-meta-label {
+      font-size: .7rem; font-weight: 600; text-transform: uppercase;
+      letter-spacing: .1em; color: rgba(255,255,255,.45);
+    }
+    .hero-meta-value {
+      font-size: .95rem; font-weight: 600; color: rgba(255,255,255,.9);
+    }
+    .hero-divider {
+      width: 48px; height: 4px;
+      background: linear-gradient(90deg, var(--accent), #b91c1c);
+      border-radius: 2px; margin: 2.5rem 0;
+    }
+
+    /* ─── LAYOUT ───────────────────────────────────────────── */
+    section { padding: 72px 1.5rem; }
+    .section-inner { max-width: 1000px; margin: 0 auto; }
+    section:nth-child(even) { background: var(--bg-soft); }
+
+    .section-label {
+      display: inline-block;
+      font-size: .72rem; font-weight: 700; letter-spacing: .12em;
+      text-transform: uppercase; color: var(--accent);
+      margin-bottom: .75rem;
+    }
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.5rem, 3vw, 2rem);
+      font-weight: 700; color: var(--navy);
+      margin-bottom: 1rem;
+    }
+    .section-desc {
+      font-size: 1rem; color: var(--text-muted);
+      max-width: 700px; margin-bottom: 2.5rem;
+    }
+
+    /* ─── ABOUT ─────────────────────────────────────────────── */
+    .about-text p {
+      font-size: 1.02rem; line-height: 1.85;
+      color: var(--text); margin-bottom: 1.25rem;
+    }
+    .about-text strong { color: var(--navy); }
+
+    /* ─── TOPICS ─────────────────────────────────────────────── */
+    .topics-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+      gap: 1rem;
+    }
+    .topic-card {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.25rem 1.4rem;
+      box-shadow: var(--card-shadow);
+      display: flex; align-items: flex-start; gap: .85rem;
+      transition: box-shadow .2s, transform .2s;
+    }
+    .topic-card:hover {
+      box-shadow: 0 6px 24px rgba(214,53,53,.12);
+      transform: translateY(-2px);
+    }
+    .topic-icon {
+      width: 36px; height: 36px; border-radius: 8px;
+      background: linear-gradient(135deg, var(--accent), #991b1b);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1rem; flex-shrink: 0;
+      color: #fff;
+    }
+    .topic-text { font-size: .9rem; line-height: 1.55; color: var(--text); font-weight: 500; }
+
+    /* ─── SESSIONS ──────────────────────────────────────────── */
+    .sessions-list { display: flex; flex-direction: column; gap: .85rem; }
+    .session-card {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--accent);
+      border-radius: 0 12px 12px 0;
+      padding: 1.1rem 1.4rem;
+      box-shadow: var(--card-shadow);
+      display: flex; align-items: flex-start; gap: 1rem;
+      transition: border-color .2s, box-shadow .2s;
+    }
+    .session-card:hover {
+      border-left-color: #b91c1c;
+      box-shadow: 0 4px 20px rgba(0,0,0,.09);
+    }
+    .session-num {
+      font-size: .75rem; font-weight: 800;
+      color: var(--accent); min-width: 28px;
+      padding-top: .1rem;
+    }
+    .session-info { flex: 1; }
+    .session-title {
+      font-size: .95rem; font-weight: 600;
+      color: var(--navy); margin-bottom: .2rem;
+    }
+    .session-lead {
+      font-size: .83rem; color: var(--text-muted);
+    }
+
+    /* ─── ORGANIZERS ────────────────────────────────────────── */
+    .org-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: .85rem;
+    }
+    .org-card {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1rem 1.2rem;
+      box-shadow: var(--card-shadow);
+    }
+    .org-name {
+      font-size: .9rem; font-weight: 700; color: var(--navy);
+      margin-bottom: .2rem;
+    }
+    .org-role {
+      font-size: .75rem; font-weight: 600; color: var(--accent);
+      text-transform: uppercase; letter-spacing: .06em;
+      margin-bottom: .3rem;
+    }
+    .org-affil { font-size: .82rem; color: var(--text-muted); }
+
+    .advisory-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+      gap: .65rem; margin-top: 1rem;
+    }
+    .advisory-card {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: .85rem 1rem;
+      box-shadow: var(--card-shadow);
+    }
+    .advisory-name { font-size: .88rem; font-weight: 600; color: var(--navy); }
+    .advisory-affil { font-size: .78rem; color: var(--text-muted); margin-top: .15rem; }
+
+    /* ─── CONTACT ───────────────────────────────────────────── */
+    .contact-box {
+      background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+      border-radius: 20px;
+      padding: 3rem 2.5rem;
+      text-align: center;
+      color: #fff;
+    }
+    .contact-box .section-title { color: #fff; margin-bottom: .75rem; }
+    .contact-box p { color: rgba(255,255,255,.7); margin-bottom: 2rem; }
+    .contact-emails {
+      display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap;
+    }
+    .contact-pill {
+      display: flex; align-items: center; gap: .5rem;
+      background: rgba(255,255,255,.1);
+      border: 1px solid rgba(255,255,255,.2);
+      border-radius: 99px; padding: .6rem 1.3rem;
+      text-decoration: none; color: #fff;
+      font-size: .88rem; font-weight: 500;
+      transition: background .2s;
+    }
+    .contact-pill:hover { background: rgba(255,255,255,.2); }
+    .contact-pill::before { content: '✉'; }
+
+    /* ─── FOOTER ────────────────────────────────────────────── */
+    footer {
+      background: var(--navy);
+      color: rgba(255,255,255,.45);
+      text-align: center;
+      padding: 1.75rem 1.5rem;
+      font-size: .8rem;
+    }
+    footer a { color: #e87070; text-decoration: none; }
+
+    /* ─── RESPONSIVE ────────────────────────────────────────── */
+    @media (max-width: 640px) {
+      .nav-links { display: none; }
+      .hero { padding: 110px 1.25rem 70px; }
+      .hero-meta { gap: 1.5rem; }
+      section { padding: 56px 1.25rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ─── NAV ──────────────────────────────────────────────── -->
+<nav>
+  <div class="nav-inner">
+    <a class="nav-logo" href="#"><span>GISER</span> Symposium</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#topics">Topics</a></li>
+      <li><a href="#sessions">Sessions</a></li>
+      <li><a href="#organizers">Organizers</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ─── HERO ──────────────────────────────────────────────── -->
+<header class="hero">
+  <div class="hero-inner">
+    <div class="hero-badge">2026 AAG Annual Meeting · San Francisco, CA</div>
+    <h1>GIScience for<br /><em>Human Experience</em><br />and <em>Responsibility</em></h1>
+    <div class="hero-divider"></div>
+    <p class="hero-sub">
+      An AAG Symposium bringing together researchers advancing human-centered
+      and responsible GIScience — from GeoAI and sensing technologies to
+      ethics, privacy, and geospatial data science.
+    </p>
+    <div class="hero-meta">
+      <div class="hero-meta-item">
+        <span class="hero-meta-label">Symposium</span>
+        <span class="hero-meta-value">GISER 2026</span>
+      </div>
+      <div class="hero-meta-item">
+        <span class="hero-meta-label">Conference</span>
+        <span class="hero-meta-value">AAG Annual Meeting</span>
+      </div>
+      <div class="hero-meta-item">
+        <span class="hero-meta-label">Sessions</span>
+        <span class="hero-meta-value">9 Planned Sessions</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ─── ABOUT ─────────────────────────────────────────────── -->
+<section id="about">
+  <div class="section-inner">
+    <span class="section-label">Overview</span>
+    <h2 class="section-title">About the Symposium</h2>
+    <div class="about-text">
+      <p>
+        Recent advances in GIScience — including <strong>geospatial artificial intelligence (GeoAI)</strong>,
+        emerging sensing technologies, and large-scale geospatial data — are rapidly transforming how we study
+        <strong>human experience of place</strong> and <strong>human–environment relationships</strong>.
+        Researchers increasingly leverage geotagged texts and images to map emotion and place identity,
+        use street-view imagery to model built environments and perceived safety, and develop new GeoAI methods
+        that support human creativity in map-making and urban design.
+      </p>
+      <p>
+        Collectively, this work highlights a shift toward a more <strong>human-centered, humanistic GIScience</strong>
+        that contextualizes spatial activity with subjective experience, cultural meaning, and social context.
+      </p>
+      <p>
+        At the same time, the ethical implications of these technologies have become impossible to ignore:
+        geoprivacy risks, bias amplification, limited transparency of black-box models, and uncertainty in
+        AI-generated answers. Integrating <strong>responsible thinking</strong> into GIScience is both timely
+        and imperative — shaping how we frame geospatial questions, choose data and algorithms, interpret results,
+        and anticipate misuse.
+      </p>
+      <p>
+        In this symposium, we have multiple sessions broadly contributing to
+        <strong>human-centered and responsible GIScience</strong>, with emphasis on understanding
+        human–environment interactions, promoting quality of life, and prioritizing human values in geospatial
+        data science.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ─── TOPICS ────────────────────────────────────────────── -->
+<section id="topics">
+  <div class="section-inner">
+    <span class="section-label">Call for Participation</span>
+    <h2 class="section-title">Topics of Interest</h2>
+    <p class="section-desc">We welcome topics including, but not limited to, the following areas:</p>
+    <div class="topics-grid" style="margin-top:0">
+      <div class="topic-card">
+        <div class="topic-icon">🌐</div>
+        <span class="topic-text">Advanced GIScience methods (GeoAI, Spatial Data Science, Digital Twins) for modeling human–environment relationships</span>
+      </div>
+      <div class="topic-card">
+        <div class="topic-icon">🧠</div>
+        <span class="topic-text">Human subjective experiences (emotion, perception, cognition) across places and scales</span>
+      </div>
+      <div class="topic-card">
+        <div class="topic-icon">📍</div>
+        <span class="topic-text">Human behavior, mobility, and spatiotemporal dynamics</span>
+      </div>
+      <div class="topic-card">
+        <div class="topic-icon">🗺️</div>
+        <span class="topic-text">Creativity in cartography, urban design, and geovisualization</span>
+      </div>
+      <div class="topic-card">
+        <div class="topic-icon">⚖️</div>
+        <span class="topic-text">Responsible/ethical GIScience, bias mitigation, and geoprivacy</span>
+      </div>
+      <div class="topic-card">
+        <div class="topic-icon">🏙️</div>
+        <span class="topic-text">GIScience applications for public health, hazards, housing, crime, transportation, and social good</span>
+      </div>
+      <div class="topic-card">
+        <div class="topic-icon">🎓</div>
+        <span class="topic-text">AI literacy in teaching and learning</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── SESSIONS ───────────────────────────────────────────── -->
+<section id="sessions">
+  <div class="section-inner">
+    <span class="section-label">Program</span>
+    <h2 class="section-title">Planned Sessions</h2>
+    <div class="sessions-list">
+      <div class="session-card">
+        <span class="session-num">01</span>
+        <div class="session-info">
+          <div class="session-title">Sensing Human Experience with Emerging Geospatial Methods I</div>
+          <div class="session-lead">Led by Dr. Jiaxin Feng</div>
+        </div>
+      </div>
+      <div class="session-card">
+        <span class="session-num">02</span>
+        <div class="session-info">
+          <div class="session-title">Sensing Human Experience with Emerging Geospatial Methods II</div>
+          <div class="session-lead">Led by Dr. Yuhao Kang</div>
+        </div>
+      </div>
+      <div class="session-card">
+        <span class="session-num">03</span>
+        <div class="session-info">
+          <div class="session-title">Ethics in GIScience</div>
+          <div class="session-lead">Led by Dr. Hongyu Zhang</div>
+        </div>
+      </div>
+      <div class="session-card">
+        <span class="session-num">04</span>
+        <div class="session-info">
+          <div class="session-title">Ethics in GIS Education</div>
+          <div class="session-lead">Led by Dr. Yue Lin</div>
+        </div>
+      </div>
+      <div class="session-card">
+        <span class="session-num">05</span>
+        <div class="session-info">
+          <div class="session-title">Digital Twin and 3D Cities for Urban Analytics</div>
+          <div class="session-lead">Led by Dr. Debayan Mandal and Jasper Li</div>
+        </div>
+      </div>
+      <div class="session-card">
+        <span class="session-num">06</span>
+        <div class="session-info">
+          <div class="session-title">Social Sensing for Disasters and Health Crises</div>
+          <div class="session-lead">Led by Dr. Hoeyun Kwon</div>
+        </div>
+      </div>
+      <div class="session-card">
+        <span class="session-num">07</span>
+        <div class="session-info">
+          <div class="session-title">GIScience for Environmental Health</div>
+          <div class="session-lead">Led by Joynal Abedin and Dr. Lei Zou</div>
+        </div>
+      </div>
+      <div class="session-card">
+        <span class="session-num">08</span>
+        <div class="session-info">
+          <div class="session-title">Sensing Urban Mobility: Human-Centered Learning, Prediction, and Decision-Making</div>
+          <div class="session-lead">Led by Armita Kar</div>
+        </div>
+      </div>
+      <div class="session-card">
+        <span class="session-num">09</span>
+        <div class="session-info">
+          <div class="session-title">Past, Present, and Future of GIScience (Panel)</div>
+          <div class="session-lead">Led by GISS</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── ORGANIZERS ─────────────────────────────────────────── -->
+<section id="organizers">
+  <div class="section-inner">
+    <span class="section-label">People</span>
+    <h2 class="section-title">Organizers</h2>
+
+    <h3 style="font-size:1.05rem; font-weight:700; color:var(--navy); margin-bottom:1.25rem;">Organizing Committee</h3>
+    <div class="org-grid">
+      <div class="org-card">
+        <div class="org-role">Co-Lead</div>
+        <div class="org-name">Yuhao Kang</div>
+        <div class="org-affil">University of Texas at Austin</div>
+      </div>
+      <div class="org-card">
+        <div class="org-role">Co-Lead</div>
+        <div class="org-name">Lei Zou</div>
+        <div class="org-affil">Texas A&amp;M University</div>
+      </div>
+      <div class="org-card">
+        <div class="org-name">Jiaxin Feng</div>
+        <div class="org-affil">Dartmouth College</div>
+      </div>
+      <div class="org-card">
+        <div class="org-name">Armita Kar</div>
+        <div class="org-affil">George Mason University</div>
+      </div>
+      <div class="org-card">
+        <div class="org-name">Hoeyun Kwon</div>
+        <div class="org-affil">Lehman College, CUNY</div>
+      </div>
+      <div class="org-card">
+        <div class="org-name">Yue Lin</div>
+        <div class="org-affil">University of Illinois Urbana-Champaign</div>
+      </div>
+      <div class="org-card">
+        <div class="org-name">Hongyu Zhang</div>
+        <div class="org-affil">University of Massachusetts Amherst</div>
+      </div>
+      <div class="org-card">
+        <div class="org-name">Bing Zhou</div>
+        <div class="org-affil">University of Tennessee, Knoxville</div>
+      </div>
+    </div>
+
+    <h3 style="font-size:1.05rem; font-weight:700; color:var(--navy); margin-top:2.5rem; margin-bottom:1rem;">Advisory Committee</h3>
+    <div class="advisory-grid">
+      <div class="advisory-card">
+        <div class="advisory-name">Song Gao</div>
+        <div class="advisory-affil">University of Wisconsin–Madison</div>
+      </div>
+      <div class="advisory-card">
+        <div class="advisory-name">Yingjie Hu</div>
+        <div class="advisory-affil">University at Buffalo</div>
+      </div>
+      <div class="advisory-card">
+        <div class="advisory-name">Caglar Koylu</div>
+        <div class="advisory-affil">University of Iowa</div>
+      </div>
+      <div class="advisory-card">
+        <div class="advisory-name">Meipo Kwan</div>
+        <div class="advisory-affil">The Chinese University of Hong Kong</div>
+      </div>
+      <div class="advisory-card">
+        <div class="advisory-name">Nina Lam</div>
+        <div class="advisory-affil">CUHK &amp; Louisiana State University</div>
+      </div>
+      <div class="advisory-card">
+        <div class="advisory-name">Grant McKenzie</div>
+        <div class="advisory-affil">McGill University</div>
+      </div>
+      <div class="advisory-card">
+        <div class="advisory-name">Harvey Miller</div>
+        <div class="advisory-affil">The Ohio State University</div>
+      </div>
+      <div class="advisory-card">
+        <div class="advisory-name">Shih-Lung Shaw</div>
+        <div class="advisory-affil">University of Tennessee, Knoxville</div>
+      </div>
+      <div class="advisory-card">
+        <div class="advisory-name">Shaowen Wang</div>
+        <div class="advisory-affil">University of Illinois Urbana-Champaign</div>
+      </div>
+      <div class="advisory-card">
+        <div class="advisory-name">Ningchuan Xiao</div>
+        <div class="advisory-affil">The Ohio State University</div>
+      </div>
+      <div class="advisory-card">
+        <div class="advisory-name">Xinyue Ye</div>
+        <div class="advisory-affil">University of Alabama</div>
+      </div>
+      <div class="advisory-card">
+        <div class="advisory-name">Bo Zhao</div>
+        <div class="advisory-affil">University of Washington</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── CONTACT ────────────────────────────────────────────── -->
+<section id="contact">
+  <div class="section-inner">
+    <div class="contact-box">
+      <span class="section-label" style="color:#e87070;">Get in Touch</span>
+      <h2 class="section-title">Contact</h2>
+      <p>For questions, please email the symposium organizers.</p>
+      <div class="contact-emails">
+        <a class="contact-pill" href="mailto:lzou@tamu.edu">Lei Zou — lzou@tamu.edu</a>
+        <a class="contact-pill" href="mailto:yuhao.kang@austin.utexas.edu">Yuhao Kang — yuhao.kang@austin.utexas.edu</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── FOOTER ─────────────────────────────────────────────── -->
+<footer>
+  <p>© 2026 GISER · 2026 AAG Symposium on GIScience for Human Experience and Responsibility</p>
+  <p style="margin-top:.4rem;"><a href="https://github.com/gisersym/gisersym.github.io">Open source on GitHub</a></p>
+</footer>
+
+</body>
+</html>
