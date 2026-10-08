@@ -1,8 +1,33 @@
 # GISERSym.github.io
 
-## Planned Sessions
+Website of the AAG Symposium on **GIScience for Human Experience and Responsibility (GISER)**: <https://gisersym.github.io>
 
-## GISER Symposium Sessions — AAG 2026
+## Current: GISER at AAG 2027
+
+- **Dates:** February 8–12, 2027
+- **Location:** New York, NY (Hilton Midtown, 1335 6th Ave)
+- **Official meeting page:** <https://www.aag.org/events/aag2027/>
+- **Submission portal:** <https://aag.secure-platform.com/aag2027>
+- **Organizers:** same organizing and advisory committees as 2026 (see the website)
+
+| AAG 2027 key date | Milestone |
+|---|---|
+| Oct 15, 2026 | Abstract submission deadline |
+| Nov 5, 2026 | Session organizing deadline |
+| Dec 10, 2026 | AAG program release |
+| Dec 17, 2026 | Abstract and session editing deadline |
+
+**Sessions:** to be announced. The 2027 session list will be added once AAG releases the program.
+
+## Archive
+
+| Year | Location | Page |
+|---|---|---|
+| AAG 2026 | San Francisco, CA · Mar 17–20, 2026 · 29 sessions | [`/2026/`](https://gisersym.github.io/2026/) |
+
+---
+
+## Archived: GISER Symposium Sessions — AAG 2026
 
 Source:  
 https://aag-meetings.secure-platform.com/aag2026

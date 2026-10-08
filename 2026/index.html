@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GISER 2027 | AAG Symposium on GIScience for Human Experience and Responsibility</title>
+  <title>GISER 2026 (Archive) | AAG Symposium on GIScience for Human Experience and Responsibility</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet" />
@@ -216,55 +216,6 @@
       font-size: .83rem; color: var(--text-muted);
     }
 
-    .notice-card {
-      background: var(--bg);
-      border: 1px dashed var(--accent-light);
-      border-radius: 12px;
-      padding: 1.5rem 1.6rem;
-      box-shadow: var(--card-shadow);
-    }
-    .notice-card h3 { font-size: 1.05rem; color: var(--navy); margin-bottom: .4rem; }
-    .notice-card p { font-size: .93rem; color: var(--text-muted); }
-    .notice-card a { color: var(--accent); font-weight: 600; }
-
-    /* ─── KEY DATES ─────────────────────────────────────────── */
-    .dates-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-      gap: 1rem;
-    }
-    .date-card {
-      background: var(--bg);
-      border: 1px solid var(--border);
-      border-top: 4px solid var(--navy-light);
-      border-radius: 0 0 12px 12px;
-      padding: 1.1rem 1.25rem;
-      box-shadow: var(--card-shadow);
-    }
-    .date-card.highlight { border-top-color: var(--accent); }
-    .date-when { font-size: 1.05rem; font-weight: 800; color: var(--navy); }
-    .date-what { font-size: .85rem; color: var(--text-muted); margin-top: .2rem; }
-    .dates-note { font-size: .82rem; color: var(--text-muted); margin-top: 1.25rem; }
-    .dates-note a { color: var(--accent); }
-
-    /* ─── ARCHIVE ───────────────────────────────────────────── */
-    .archive-card {
-      display: flex; justify-content: space-between; align-items: center;
-      gap: 1rem; flex-wrap: wrap;
-      background: var(--bg);
-      border: 1px solid var(--border);
-      border-left: 4px solid var(--gold);
-      border-radius: 0 12px 12px 0;
-      padding: 1.25rem 1.5rem;
-      box-shadow: var(--card-shadow);
-      text-decoration: none; color: inherit;
-      transition: box-shadow .2s;
-    }
-    .archive-card:hover { box-shadow: 0 4px 20px rgba(0,0,0,.1); }
-    .archive-year { font-size: 1.1rem; font-weight: 800; color: var(--navy); }
-    .archive-detail { font-size: .88rem; color: var(--text-muted); }
-    .archive-cta { font-size: .88rem; font-weight: 600; color: var(--accent); }
-
     /* ─── ORGANIZERS ────────────────────────────────────────── */
     .org-grid {
       display: grid;
@@ -346,6 +297,13 @@
       .hero-meta { gap: 1.5rem; }
       section { padding: 56px 1.25rem; }
     }
+    .archive-banner {
+      position: fixed; top: 60px; left: 0; right: 0; z-index: 99;
+      background: var(--gold); color: var(--navy);
+      text-align: center; font-size: .85rem; font-weight: 600;
+      padding: .45rem 1rem;
+    }
+    .archive-banner a { color: var(--navy); }
   </style>
 </head>
 <body>
@@ -353,23 +311,24 @@
 <!-- ─── NAV ──────────────────────────────────────────────── -->
 <nav>
   <div class="nav-inner">
-    <a class="nav-logo" href="#"><span>GISER</span> Symposium</a>
+    <a class="nav-logo" href="../"><span>GISER</span> Symposium</a>
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
       <li><a href="#topics">Topics</a></li>
       <li><a href="#sessions">Sessions</a></li>
-      <li><a href="#dates">Key Dates</a></li>
       <li><a href="#organizers">Organizers</a></li>
       <li><a href="#contact">Contact</a></li>
-      <li><a href="#archive">Archive</a></li>
+      <li><a href="../">AAG 2027 &rarr;</a></li>
     </ul>
   </div>
 </nav>
 
+<div class="archive-banner">Archived page: GISER Symposium at AAG 2026 (San Francisco, March 17–20, 2026). <a href="../">See the current AAG 2027 symposium &rarr;</a></div>
+
 <!-- ─── HERO ──────────────────────────────────────────────── -->
 <header class="hero">
   <div class="hero-inner">
-    <div class="hero-badge">2027 AAG Annual Meeting · New York, NY</div>
+    <div class="hero-badge">2026 AAG Annual Meeting · San Francisco, CA</div>
     <h1>GIScience for<br /><em>Human Experience</em><br />and <em>Responsibility</em></h1>
     <div class="hero-divider"></div>
     <p class="hero-sub">
@@ -380,19 +339,15 @@
     <div class="hero-meta">
       <div class="hero-meta-item">
         <span class="hero-meta-label">Symposium</span>
-        <span class="hero-meta-value">GISER 2027</span>
+        <span class="hero-meta-value">GISER 2026</span>
       </div>
       <div class="hero-meta-item">
-        <span class="hero-meta-label">Dates</span>
-        <span class="hero-meta-value">February 8–12, 2027</span>
-      </div>
-      <div class="hero-meta-item">
-        <span class="hero-meta-label">Venue</span>
-        <span class="hero-meta-value">Hilton Midtown, New York City</span>
+        <span class="hero-meta-label">Conference</span>
+        <span class="hero-meta-value">AAG Annual Meeting</span>
       </div>
       <div class="hero-meta-item">
         <span class="hero-meta-label">Sessions</span>
-        <span class="hero-meta-value">To Be Announced</span>
+        <span class="hero-meta-value">29 Sessions · Mar 17–20, 2026</span>
       </div>
     </div>
   </div>
@@ -473,57 +428,279 @@
 </section>
 
 <!-- ─── SESSIONS ───────────────────────────────────────────── -->
+<!-- ─── SESSIONS ───────────────────────────────────────────── -->
 <section id="sessions">
-  <div class="section-inner">
-    <span class="section-label">Program</span>
-    <h2 class="section-title">Sessions</h2>
-    <div class="notice-card">
-      <h3>The AAG 2027 session list is not yet available</h3>
-      <p>
-        GISER sessions for AAG 2027 are still being organized. The full list, with dates,
-        times, rooms, and session organizers, will appear here once AAG releases the
-        program (expected December 10, 2026). Looking for last year's lineup? Browse the
-        <a href="2026/">29 sessions of GISER at AAG 2026</a>.
-      </p>
-    </div>
-  </div>
-</section>
+<div class="section-inner">
+<span class="section-label">Program</span>
+<h2 class="section-title">AAG 2026 Sessions</h2>
 
-<!-- ─── KEY DATES ──────────────────────────────────────────── -->
-<section id="dates">
-  <div class="section-inner">
-    <span class="section-label">AAG 2027</span>
-    <h2 class="section-title">Key Dates</h2>
-    <div class="dates-grid">
-      <div class="date-card">
-        <div class="date-when">Oct 15, 2026</div>
-        <div class="date-what">Abstract submission deadline</div>
-      </div>
-      <div class="date-card">
-        <div class="date-when">Nov 5, 2026</div>
-        <div class="date-what">Session organizing deadline</div>
-      </div>
-      <div class="date-card">
-        <div class="date-when">Dec 10, 2026</div>
-        <div class="date-what">AAG program release</div>
-      </div>
-      <div class="date-card">
-        <div class="date-when">Dec 17, 2026</div>
-        <div class="date-what">Abstract and session editing deadline</div>
-      </div>
-      <div class="date-card highlight">
-        <div class="date-when">Feb 8–12, 2027</div>
-        <div class="date-what">AAG Annual Meeting · Hilton Midtown, New York City</div>
-      </div>
-    </div>
-    <p class="dates-note">
-      Deadlines are set by AAG and may change. See the official
-      <a href="https://www.aag.org/events/aag2027/" target="_blank" rel="noopener">AAG 2027 meeting page</a>
-      and <a href="https://aag.secure-platform.com/aag2027" target="_blank" rel="noopener">submission portal</a>.
-    </p>
-  </div>
-</section>
+<div class="sessions-list">
 
+<div class="session-card">
+<span class="session-num">01</span>
+<div class="session-info">
+<div class="session-title">Multimodal Human Mobility</div>
+<div class="session-lead">Led by Luyu Liu</div>
+<div class="session-meta">Mar 17 · 10:10–11:30 AM · Nikko I, 3rd Floor</div>
+</div>
+</div>
+
+<div class="session-card">
+<span class="session-num">02</span>
+<div class="session-info">
+<div class="session-title">Past, Present, and Future of GIScience</div>
+<div class="session-lead">Led by Lei Zou</div>
+<div class="session-meta">Mar 17 · 12:50–2:10 PM · Nikko I, 3rd Floor</div>
+</div>
+</div>
+
+<div class="session-card">
+<span class="session-num">03</span>
+<div class="session-info">
+<div class="session-title">AI &amp; Ethics in Geography Education</div>
+<div class="session-lead">Led by Yue Lin</div>
+<div class="session-meta">Mar 17 · 2:30–3:50 PM · Nikko I, 3rd Floor</div>
+</div>
+</div>
+
+<div class="session-card">
+<span class="session-num">04</span>
+<div class="session-info">
+<div class="session-title">Urban Environmental Challenges and Mobility Dynamics</div>
+<div class="session-lead">Led by Suyeon Hwang</div>
+<div class="session-meta">Mar 17 · 4:10–5:30 PM · Nikko I, 3rd Floor</div>
+</div>
+</div>
+
+<div class="session-card">
+<span class="session-num">05</span>
+<div class="session-info">
+<div class="session-title">Less Is More? The Value of Small Geospatial Data in the Era of Big Data and AI</div>
+<div class="session-lead">Led by Lei Zou</div>
+<div class="session-meta">Mar 18 · 8:30–9:50 AM · Nikko I, 3rd Floor</div>
+</div>
+</div>
+
+<div class="session-card">
+<span class="session-num">06</span>
+<div class="session-info">
+<div class="session-title">Humans in GIScience and GeoAI</div>
+<div class="session-lead">Led by Shih-Lung Shaw</div>
+<div class="session-meta">Mar 18 · 10:10–11:30 AM · Continental 8, Hilton Ballroom Level</div>
+</div>
+</div>
+
+<div class="session-card">
+<span class="session-num">07</span>
+<div class="session-info">
+<div class="session-title">Integration of AI and GIS for Smart Urban Management</div>
+<div class="session-lead">Led by Junghwan Kim</div>
+<div class="session-meta">Mar 18 · 2:30–3:50 PM · Nikko I, 3rd Floor</div>
+</div>
+</div>
+
+<div class="session-card">
+<span class="session-num">08</span>
+<div class="session-info">
+<div class="session-title">GIScience Advances in Climate Effects on Environmental Health</div>
+<div class="session-lead">Led by Joynal Abedin</div>
+<div class="session-meta">Mar 19 · 8:30–9:50 AM · Nikko I, 3rd Floor</div>
+</div>
+</div>
+
+<div class="session-card">
+<span class="session-num">09</span>
+<div class="session-info">
+<div class="session-title">Sensing Human Experiences with Emerging Geospatial Methods I</div>
+<div class="session-lead">Led by Yuhao Kang</div>
+<div class="session-meta">Mar 19 · 8:30–9:50 AM · Nikko III, 3rd Floor</div>
+</div>
+</div>
+
+<div class="session-card">
+<span class="session-num">10</span>
+<div class="session-info">
+<div class="session-title">Ethics in GIScience</div>
+<div class="session-lead">Led by Hongyu Zhang</div>
+<div class="session-meta">Mar 19 · 10:10–11:30 AM · Golden Gate, 25th Floor</div>
+</div>
+</div>
+
+<div class="session-card">
+<span class="session-num">11</span>
+<div class="session-info">
+<div class="session-title">Sensing Human Experiences with Emerging Geospatial Methods II</div>
+<div class="session-lead">Led by Jiaxin Feng</div>
+<div class="session-meta">Mar 19 · 10:10–11:30 AM · Nikko III, 3rd Floor</div>
+</div>
+</div>
+
+<div class="session-card">
+<span class="session-num">12</span>
+<div class="session-info">
+<div class="session-title">Sensing Urban Human Dynamics Through Multi-Source Insights I</div>
+<div class="session-lead">Led by Hao Tian</div>
+<div class="session-meta">Mar 19 · 12:50–2:10 PM · Nikko I, 3rd Floor</div>
+</div>
+</div>
+
+<div class="session-card">
+<span class="session-num">13</span>
+<div class="session-info">
+<div class="session-title">Sensing Human Experiences with Emerging Geospatial Methods III</div>
+<div class="session-lead">Led by Jiaxin Feng</div>
+<div class="session-meta">Mar 19 · 12:50–2:10 PM · Nikko III, 3rd Floor</div>
+</div>
+</div>
+
+<div class="session-card">
+<span class="session-num">14</span>
+<div class="session-info">
+<div class="session-title">GIScience and Hazards I</div>
+<div class="session-lead">Led by Bandana Kar</div>
+<div class="session-meta">Mar 19 · 2:30–3:50 PM · Golden Gate, 25th Floor</div>
+</div>
+</div>
+
+<div class="session-card">
+<span class="session-num">15</span>
+<div class="session-info">
+<div class="session-title">Sensing Human Experiences with Emerging Geospatial Methods IV</div>
+<div class="session-lead">Led by Jiaxin Feng</div>
+<div class="session-meta">Mar 19 · 2:30–3:50 PM · Nikko III, 3rd Floor</div>
+</div>
+</div>
+
+<div class="session-card">
+<span class="session-num">16</span>
+<div class="session-info">
+<div class="session-title">Sensing Urban Human Dynamics Through Multi-Source Insights II</div>
+<div class="session-lead">Led by Heng Cai</div>
+<div class="session-meta">Mar 19 · 2:30–3:50 PM · Nikko I, 3rd Floor</div>
+</div>
+</div>
+
+<div class="session-card">
+<span class="session-num">17</span>
+<div class="session-info">
+<div class="session-title">Human-Centered Urban Sustainability</div>
+<div class="session-lead">Led by Zhang Chen</div>
+<div class="session-meta">Mar 19 · 4:10–5:30 PM · Nikko III, 3rd Floor</div>
+</div>
+</div>
+
+<div class="session-card">
+<span class="session-num">18</span>
+<div class="session-info">
+<div class="session-title">Human-Centered Disaster Risk and Resilience</div>
+<div class="session-lead">Led by Md Zakaria Salim</div>
+<div class="session-meta">Mar 19 · 4:10–5:30 PM · Peninsula, 25th Floor</div>
+</div>
+</div>
+
+<div class="session-card">
+<span class="session-num">19</span>
+<div class="session-info">
+<div class="session-title">GIScience and Hazards II</div>
+<div class="session-lead">Led by Bandana Kar</div>
+<div class="session-meta">Mar 19 · 4:10–5:30 PM · Monterey 1 &amp; 2, 3rd Floor</div>
+</div>
+</div>
+
+<div class="session-card">
+<span class="session-num">20</span>
+<div class="session-info">
+<div class="session-title">Linking Human Physiology and Perception of Space</div>
+<div class="session-lead">Led by Armita Kar</div>
+<div class="session-meta">Mar 19 · 4:10–5:30 PM · Nikko I, 3rd Floor</div>
+</div>
+</div>
+
+<div class="session-card">
+<span class="session-num">21</span>
+<div class="session-info">
+<div class="session-title">Human Networks and Data Science</div>
+<div class="session-lead">Led by Lei Zou</div>
+<div class="session-meta">Mar 19 · 4:10–5:30 PM · Golden Gate 4, Hilton Lobby Level</div>
+</div>
+</div>
+
+<div class="session-card">
+<span class="session-num">22</span>
+<div class="session-info">
+<div class="session-title">Human-Environment Interactions in Digital Twin and 3D Urban Space</div>
+<div class="session-lead">Led by Zongrong Li</div>
+<div class="session-meta">Mar 20 · 8:30–9:50 AM · Nikko I, 3rd Floor</div>
+</div>
+</div>
+
+<div class="session-card">
+<span class="session-num">23</span>
+<div class="session-info">
+<div class="session-title">Future of Human-Centered Geospatial AI</div>
+<div class="session-lead">Led by Jiaxin Feng</div>
+<div class="session-meta">Mar 20 · 8:30–9:50 AM · Golden Gate, 25th Floor</div>
+</div>
+</div>
+
+<div class="session-card">
+<span class="session-num">24</span>
+<div class="session-info">
+<div class="session-title">Sensing Urban Mobility Experiences</div>
+<div class="session-lead">Led by Armita Kar</div>
+<div class="session-meta">Mar 20 · 10:10–11:30 AM · Peninsula, 25th Floor</div>
+</div>
+</div>
+
+<div class="session-card">
+<span class="session-num">25</span>
+<div class="session-info">
+<div class="session-title">Crime Analysis and Public Safety I</div>
+<div class="session-lead">Led by Hanlin Zhou</div>
+<div class="session-meta">Mar 20 · 10:10–11:30 AM · Golden Gate, 25th Floor</div>
+</div>
+</div>
+
+<div class="session-card">
+<span class="session-num">26</span>
+<div class="session-info">
+<div class="session-title">Crime Analysis and Public Safety II</div>
+<div class="session-lead">Led by Hanlin Zhou</div>
+<div class="session-meta">Mar 20 · 12:50–2:10 PM · Golden Gate, 25th Floor</div>
+</div>
+</div>
+
+<div class="session-card">
+<span class="session-num">27</span>
+<div class="session-info">
+<div class="session-title">Social Sensing for Disasters, Health Crises, and Disruptive Events</div>
+<div class="session-lead">Led by Hoeyun Kwon</div>
+<div class="session-meta">Mar 20 · 12:50–2:10 PM · Virtual Session</div>
+</div>
+</div>
+
+<div class="session-card">
+<span class="session-num">28</span>
+<div class="session-info">
+<div class="session-title">Crime Analysis and Public Safety III</div>
+<div class="session-lead">Led by Hanlin Zhou</div>
+<div class="session-meta">Mar 20 · 2:30–3:50 PM · Golden Gate, 25th Floor</div>
+</div>
+</div>
+
+<div class="session-card">
+<span class="session-num">29</span>
+<div class="session-info">
+<div class="session-title">Disability GIS</div>
+<div class="session-lead">Led by Shiloh Deitz</div>
+<div class="session-meta">Mar 20 · 4:10–5:30 PM · Golden Gate, 25th Floor</div>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+  
 <!-- ─── ORGANIZERS ─────────────────────────────────────────── -->
 <section id="organizers">
   <div class="section-inner">
@@ -637,24 +814,9 @@
   </div>
 </section>
 
-<!-- ─── ARCHIVE ────────────────────────────────────────────── -->
-<section id="archive">
-  <div class="section-inner">
-    <span class="section-label">Past Symposia</span>
-    <h2 class="section-title">Archive</h2>
-    <a class="archive-card" href="2026/">
-      <div>
-        <div class="archive-year">GISER at AAG 2026</div>
-        <div class="archive-detail">San Francisco, CA · March 17–20, 2026 · 29 sessions</div>
-      </div>
-      <span class="archive-cta">View program &rarr;</span>
-    </a>
-  </div>
-</section>
-
 <!-- ─── FOOTER ─────────────────────────────────────────────── -->
 <footer>
-  <p>© 2026 GISER · 2027 AAG Symposium on GIScience for Human Experience and Responsibility</p>
+  <p>© 2026 GISER · 2026 AAG Symposium on GIScience for Human Experience and Responsibility</p>
   <p style="margin-top:.4rem;"><a href="https://github.com/gisersym/gisersym.github.io">Open source on GitHub</a></p>
 </footer>
 
