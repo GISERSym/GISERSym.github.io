@@ -19,10 +19,13 @@ Website of the AAG Symposium on **GIScience for Human Experience and Responsibil
 
 **Sessions:** to be announced. The 2027 session list will be added once AAG releases the program.
 
-## Archive
+## Pages by year
+
+The site root redirects to the current year.
 
 | Year | Location | Page |
 |---|---|---|
+| AAG 2027 (current) | New York, NY · Feb 8–12, 2027 | [`/2027/`](https://gisersym.github.io/2027/) |
 | AAG 2026 | San Francisco, CA · Mar 17–20, 2026 · 29 sessions | [`/2026/`](https://gisersym.github.io/2026/) |
 
 ---
