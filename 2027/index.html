@@ -287,11 +287,11 @@
     .group-h { font-family: var(--mono); font-size: .72rem; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); padding-top: .35rem; }
     .group-h b { display: block; font-family: var(--serif); font-size: 1.15rem; letter-spacing: 0; text-transform: none; color: var(--ink); font-weight: 500; margin-bottom: .3rem; }
 
-    .leads { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem; }
+    .leads { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1.2rem; }
     .lead {
-      display: flex; gap: 1.5rem; align-items: center;
+      display: flex; gap: 1.2rem; align-items: center;
       background: var(--card); border: 1px solid var(--rule-soft); border-radius: 4px;
-      padding: 1.5rem 1.6rem; transition: transform .25s, box-shadow .25s;
+      padding: 1.4rem 1.3rem; transition: transform .25s, box-shadow .25s;
     }
     .lead:hover { transform: translateY(-3px); box-shadow: 0 18px 40px -24px rgba(14,26,43,.35); }
     .mono-gram {
@@ -588,10 +588,32 @@
           </div>
         </div>
         <div class="lead">
+          <img class="avatar" src="../assets/people/hongyu-zhang.jpg" alt="Portrait of Hongyu Zhang" width="84" height="84" loading="lazy" />
+          <div>
+            <div class="lead-role">Co-Lead</div>
+            <div class="lead-name">Hongyu Zhang</div>
+            <div class="lead-aff">University of Massachusetts Amherst</div>
+          </div>
+        </div>
+        <div class="lead">
           <img class="avatar" src="../assets/people/lei-zou.jpg" alt="Portrait of Lei Zou" width="84" height="84" loading="lazy" />
           <div>
             <div class="lead-role">Co-Lead</div>
             <div class="lead-name">Lei Zou</div>
+            <div class="lead-aff">Texas A&amp;M University</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="group reveal">
+      <div class="group-h"><b>Student Co-Lead</b>Student chair</div>
+      <div class="leads">
+        <div class="lead">
+          <img class="avatar" src="../assets/people/yifan-yang.jpg" alt="Portrait of Yifan Yang" width="84" height="84" loading="lazy" />
+          <div>
+            <div class="lead-role">Student Co-Lead</div>
+            <div class="lead-name">Yifan Yang</div>
             <div class="lead-aff">Texas A&amp;M University</div>
           </div>
         </div>
@@ -605,7 +627,6 @@
         <div class="person"><div class="p-name">Armita Kar</div><div class="p-aff">George Mason University</div></div>
         <div class="person"><div class="p-name">Hoeyun Kwon</div><div class="p-aff">Lehman College, CUNY</div></div>
         <div class="person"><div class="p-name">Yue Lin</div><div class="p-aff">University of Illinois Urbana-Champaign</div></div>
-        <div class="person"><div class="p-name">Hongyu Zhang</div><div class="p-aff">University of Massachusetts Amherst</div></div>
         <div class="person"><div class="p-name">Bing Zhou</div><div class="p-aff">University of Tennessee, Knoxville</div></div>
       </div>
     </div>
@@ -613,7 +634,6 @@
     <div class="group reveal">
       <div class="group-h"><b>Student Committee</b>Student organizers</div>
       <div class="people">
-        <div class="person student"><div class="p-name">Yifan Yang</div><div class="p-aff">Texas A&amp;M University</div></div>
         <div class="person student"><div class="p-name">Yuye Zhou</div><div class="p-aff">University of California, Berkeley</div></div>
         <div class="person student"><div class="p-name">Meicheng Xiong</div><div class="p-aff">University of Minnesota</div></div>
         <div class="person student"><div class="p-name">Jiayin Zhang</div><div class="p-aff">University of California, Santa Barbara</div></div>
